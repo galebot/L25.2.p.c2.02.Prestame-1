@@ -7,9 +7,9 @@ interface iPersona {
   cedula: number; 
   nombre: string;
   edad: number; 
-  sexo: string; // Corregido a string
+  sexo: string;
   edoCivil: number;
-  nota?: number; // Agregada nota
+  nota?: number;
   porcentajeCreditoAprobado: number;
 
 }
