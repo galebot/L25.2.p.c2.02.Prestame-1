@@ -1,0 +1,109 @@
+/*
+ * Archivo: styles.css
+ * Descripción: Estilos CSS corregidos y optimizados.
+ */
+
+/* Estilos Generales para todas las secciones */
+section {
+    border: 3px solid blue;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px; 
+}
+
+/* Estilos para etiquetas de entrada (labels) */
+label {
+    margin-top: 5px;
+}
+
+/* Estilos para títulos h3 */
+h3 {
+    color: white;
+    background-color: blue;
+    padding: 3px;
+    border-radius: 8px; 
+    text-align: center;
+}
+
+/* Estilos para títulos h4 */
+h4 {
+    margin-top: 1px;
+    margin-bottom: 0px;
+    font-style: italic;
+    font-weight: normal;
+    color: seagreen;
+}
+
+/* Estilos para botones */
+button {
+    margin-top: 10px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px; 
+    padding: 5px;
+    border: none;
+}
+
+/* Estilos para campos de entrada de texto/número */
+input {
+    width: 100px;
+}
+
+/* Estilos de Borde y Alineación para la Tabla, th y td */
+table,
+th,
+td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px; /* Relleno básico para legibilidad */
+}
+
+/* CORRECCIONES CLAVE para la Tabla Principal (#mainForm table) */
+#mainForm table {
+    /* 1. Elimina el espacio entre filas y celdas */
+    border-collapse: collapse; 
+    border-spacing: 0; 
+    
+    /* 2. Permite que las columnas se adapten al contenido (TH o TD más ancho) */
+    table-layout: auto; 
+    
+    /* 3. La tabla solo ocupará el espacio que necesite su contenido */
+    width: auto; 
+}
+
+/* Estilos para la sección de entrada de datos */
+#personaForm {
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-end; /* Mejoró de 'end' a 'flex-end' */
+    width: 300px; 
+}
+
+/* Estilos para la sección principal que contiene la tabla de resultados */
+#mainForm {
+    display: flex;
+    flex-direction: column;
+    width: auto; 
+    max-width: 95%; 
+}
+
+/* Clases de utilidad para la alineación de contenido en celdas de la tabla */
+.colCurrency {
+    text-align: right;
+    padding-left: 10px;
+}
+
+.colNumber {
+    text-align: center; 
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+/* Estilos para la caja de salida de resultados */
+.divSalida {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid blue;
+    padding: 5px;
+    margin-top: 10px;
+}

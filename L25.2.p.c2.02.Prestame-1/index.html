@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prestame 1</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+
+  </style>
+</head>
+<body>
+  <h2>Prestame 1</h2>
+
+    <section id="personaForm" style="display: none;">
+    <h3 style="width: 250px;">Persona <span id="personaForm_lblPersona"></span></h3>
+    
+    <label id="personaForm_divInNombre">Nombre:<input type="text" id="personaForm_inNombre" /> 
+    </label>
+
+        <label id="personaForm_divInCedula">Cedula:<input type="number" id="personaForm_inCedula" />
+    </label>
+    
+
+    
+    <label id="personaForm_divInEdad">Edad:<input type="number" id="personaForm_inEdad" />
+    </label>
+
+    <label id="personaForm_divInSexo">Sexo (M-F):<input type="text" id="personaForm_inSexo" />
+    </label>
+    
+    <label id="personaForm_divInEdoCivil">Estado Civil (1-4):<input type="number" id="personaForm_inEdoCivil" />
+    </label>
+
+    <label id="personaForm_divInNota">Nota:<input type="number" id="personaForm_inNota" />
+    </label>
+    
+    
+    <div>
+      <button id="personaForm_btAceptarEstudiante" hidden>Aceptar Estudiante</button>
+      <button id="personaForm_btAceptarComerciante" hidden>Aceptar Comerciante</button>
+      <button id="personaForm_btCancelar">Cancelar</button>
+    </div>
+  </section>
+
+  <section id="mainForm">
+    <h3>Personas Procesadas</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Cedula </th>
+          <th>Nombre</th>
+          <th>Edad </th>
+          <th>Sexo </th>
+          <th>Estado Civil</th>
+          <th>Nota</th>
+          <th>% Credito Aprobado</th>
+        </tr>
+      </thead>
+      <tbody id="mainForm_dataPersona"></tbody>
+    </table>
+
+    <div class="divBotones">
+      <button id="mainForm_btAgregarEstudiante">+ Estudiante</button>
+      <button id="mainForm_btAgregarComerciante">+ Comerciante</button>
+    </div>
+
+    <h3>Info de la casa de prestamos</h3>
+    <div class="divSalida">
+      <label>creditos aprobados al 100%:
+        <span id="mainForm_lblAprobados100"></span>
+      </label>
+      <label>creditos rechazados:
+        <span id="mainForm_lblRechazados"></span>
+      </label>
+      <label>% de creditos aprobados al 100%:
+        <span id="mainForm_lblPorcentajeCreditoAprobado"></span>
+      </label>
+      <label>% de creditos rechazados:
+        <span id="mainForm_lblPorcentajeCreditoRechazado"></span>
+      </label>
+         <label>Solicitudes:
+        <span id="mainForm_lblSolicitudes"></span>
+      </label>
+    </div>
+  </section>
+
+  <script type="module">
+    import Cl_index from "./dist/Cl_index.js";
+    new Cl_index();
+  </script>
+</body>
+</html>
