@@ -11,7 +11,7 @@ export default class Cl_mPersona {
     this._nombre = nombre;
     this._edad =  +edad;
         this._sexo = sexo;
-        this._edoCivil = +edoCivil; // 🚨 CORRECCIÓN: Asegurar que edoCivil sea number aquí también.
+        this._edoCivil = +edoCivil;
   }
 
   set cedula(cedula: number) { this._cedula = +cedula; }
@@ -27,7 +27,7 @@ export default class Cl_mPersona {
   set sexo(sexo: string) { this._sexo = sexo; }
   get sexo(): string { return this._sexo; }
 
-  set edoCivil(edoCivil: number) { this._edoCivil = +edoCivil; } // 🚨 CORRECCIÓN: Convertir a number.
+  set edoCivil(edoCivil: number) { this._edoCivil = +edoCivil; } 
   get edoCivil(): number { return this._edoCivil; }
 
   porcentajeCreditoAprobado(): number {
